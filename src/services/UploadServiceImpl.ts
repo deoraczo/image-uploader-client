@@ -5,8 +5,8 @@ import { injectable } from 'inversify';
 
 @injectable()
 export class UploadServiceImpl implements UploadService {
-    async uploadFile(file: File): Promise<Image> {
-        const { data } = await axios.post<Image>('/uploads')
+    async uploadFile(payload: {}): Promise<Image> {
+        const { data } = await axios.post<Image>('/api/uploads', payload);
         return data;
     }
 }
