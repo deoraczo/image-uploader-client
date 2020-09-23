@@ -1,0 +1,17 @@
+.text {
+    &--title, &--subtitle {
+        letter-spacing: var(--letter-spacing);
+        font-weight: var(--font-weight);
+    }
+    &--title {
+        font-size: var(--bigger-font-size);
+        margin-bottom: 16px;
+    }
+    &--subtitle {
+        font-size: var(--smaller-font-size);
+        color: var(--color-gray);
+    }
+    &--center {
+        text-align: center;
+    }
+}

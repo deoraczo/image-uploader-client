@@ -1,0 +1,11 @@
+.btn {
+    min-height: 32px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    border: none;
+    &_primary {
+        background-color: var(--color-primary);
+        color: #fff;
+    }
+}

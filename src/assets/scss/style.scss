@@ -1,4 +1,27 @@
+@import 'variables';
+@import 'button';
+@import 'card';
+@import 'helpers';
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-    background-color: red;
+    font-family: 'Poppins', sans-serif;
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+#app {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
 }

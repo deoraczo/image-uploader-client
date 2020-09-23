@@ -1,12 +1,11 @@
 <template>
-    <div>
-        <Upload />
-    </div>
+    <component :is="status" />
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import Upload from '@/ui/components/Upload.vue';
+import { Getter } from 'vuex-class';
 
 @Component({
     components: {
@@ -14,7 +13,8 @@ import Upload from '@/ui/components/Upload.vue';
     }
 })
 export default class Index extends Vue {
-
+    @Getter('uploader/getStatus')
+    status!: string;
 }
 
 </script>
