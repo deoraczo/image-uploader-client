@@ -39,11 +39,15 @@ export default class Uploading extends Vue {
       })
       .catch(err => {
         console.log(err);
+        this.initState();
       });
   }
 
   @Action('uploader/onFinishedLoading')
   onFinishedLoading!: (payload: { image: Image }) => void;
+
+  @Action('uploader/initState')
+  initState!: () => void;
 
 
 }

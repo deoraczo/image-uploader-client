@@ -1,6 +1,9 @@
 <template>
     <div class="card fadeIn">
         <div class="card_header text--center">
+            <button class="btn btn_back" @click="backUpload()">
+                <i class="material-icons">keyboard_backspace</i>
+            </button>
             <div class="success">
                 <i class="material-icons">check_circle</i>
             </div>
@@ -22,7 +25,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import { Getter } from 'vuex-class';
+import { Getter, Action } from 'vuex-class';
 import { Image } from '../../domain/Image';
 
 @Component({})
@@ -35,11 +38,18 @@ export default class Uploaded extends Vue {
     @Getter('uploader/getImage')
     image!: Image;
 
+    @Action('uploader/initState')
+    initState!: () => void;
+
     copy(): void {
         if(this.image.previewUrl) {
             this.$refs.inputCopy.select();
             document.execCommand('copy');
         }
+    }
+
+    backUpload(): void {
+        this.initState();
     }
 }
 </script>

@@ -1,5 +1,5 @@
 .btn {
-    min-height: 32px;
+    max-height: 32px;
     border-radius: 8px;
     padding: 8px 16px;
     cursor: pointer;
@@ -9,6 +9,15 @@
         color: #fff;
         &:hover{
             background-color: #1472dc;
+        }
+    }
+    &_back{
+        position: absolute;
+        left: 0;
+        display: flex;
+        align-items: center;
+        &:hover {
+            background-color: #eaeaea;
         }
     }
 }
