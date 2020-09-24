@@ -8,8 +8,8 @@ An application where you can storage your images in the cloud. [Here is the API 
 
 ## Build with
 
--Vuejs
--Typescript
+- Vuejs
+- Typescript
 
 ## Project setup
 ```
@@ -31,4 +31,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Contact
 
--Twitter [@deoraczo](https://twitter.com/deoraczo)
+- Twitter [@deoraczo](https://twitter.com/deoraczo)
