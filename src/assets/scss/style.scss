@@ -25,3 +25,17 @@ button:focus {
     min-height: 100vh;
     justify-content: center;
 }
+
+.fadeIn {
+    animation: fade-in 2s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

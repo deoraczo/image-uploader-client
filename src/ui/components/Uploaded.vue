@@ -1,5 +1,5 @@
 <template>
-    <div class="card">
+    <div class="card fadeIn">
         <div class="card_header text--center">
             <div class="success">
                 <i class="material-icons">check_circle</i>
@@ -8,7 +8,7 @@
         </div>
         <div class="card_body">
             <div class="cover">
-                <img :src="require('@/assets/images/test1.png')" alt="" class="cover--preview">
+                <img :src="image.previewUrl" alt="" class="cover--preview">
             </div>
         </div>
         <div class="card_footer">
@@ -57,6 +57,7 @@ export default class Uploaded extends Vue {
     overflow: hidden;
     &--preview {
         height: 220px;
+        border-radius: 12px;
     }
 
 }

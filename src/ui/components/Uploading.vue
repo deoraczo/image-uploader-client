@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card fadeIn">
     <div class="card_header">
       <h1 class="text--title">Uploading...</h1>
     </div>

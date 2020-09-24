@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card fadeIn">
     <div class="card_header text--center">
       <h1 class="text--title">Upload your image</h1>
       <h2 class="text--subtitle">File should be Jpeg, Png, ...</h2>

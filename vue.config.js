@@ -2,8 +2,11 @@ module.exports = {
     devServer: {
       proxy: {
         "/api/*": {
-          target: `http://localhost:9000`,
+          target: `https://imageuploader-api.herokuapp.com`,
         },
+        "/disk/*": {
+          target: `https://imageuploader-api.herokuapp.com`
+        }
       },
     }
 }
