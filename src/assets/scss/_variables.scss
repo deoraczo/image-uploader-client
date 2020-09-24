@@ -1,9 +1,16 @@
 :root {
-    --card-width: 400px;
+    --card-width: 320px;
     --letter-spacing: -0.035em;
     --bigger-font-size: 18px;
     --smaller-font-size: 10px;
     --color-primary: #2F80ED;
     --color-gray: #828282;
     --font-weight: 500;
+    --max-width: 1200px;
+}
+
+@media screen and (min-width: 600px) {
+    :root {
+        --card-width: 400px;
+    }
 }
