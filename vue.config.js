@@ -8,6 +8,5 @@ module.exports = {
           target: `https://imageuploader-api.herokuapp.com`
         }
       },
-    },
-    outputDir: "./docs"
+    }
 }
